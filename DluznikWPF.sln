@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DluznikWPF", "DluznikWPF\DluznikWPF.csproj", "{B7570C08-BDB4-49C0-8A66-F8FDF56A3EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DluznikWPF.Core", "DluznikWPF.Core\DluznikWPF.Core.csproj", "{9FE9581B-E843-4A32-8681-B0D4801B2690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7570C08-BDB4-49C0-8A66-F8FDF56A3EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7570C08-BDB4-49C0-8A66-F8FDF56A3EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7570C08-BDB4-49C0-8A66-F8FDF56A3EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7570C08-BDB4-49C0-8A66-F8FDF56A3EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE9581B-E843-4A32-8681-B0D4801B2690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE9581B-E843-4A32-8681-B0D4801B2690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE9581B-E843-4A32-8681-B0D4801B2690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE9581B-E843-4A32-8681-B0D4801B2690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
