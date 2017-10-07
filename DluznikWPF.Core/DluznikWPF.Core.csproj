@@ -61,6 +61,8 @@
     <Compile Include="ViewModels\Base\RelayParameterizedCommand.cs" />
     <Compile Include="ViewModels\List\Design\ListItemDesignModel.cs" />
     <Compile Include="ViewModels\List\ListItemViewModel.cs" />
+    <Compile Include="ViewModels\List\ListViewModel.cs" />
+    <Compile Include="ViewModels\ConfirmDeleteViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Net;
-using System.Runtime.InteropServices;
-using System.Security;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Input;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Collections.Generic;
 
 namespace DluznikWPF.Core
 {
@@ -20,23 +13,18 @@ namespace DluznikWPF.Core
         #region Public Properties
 
         /// <summary>
-        /// The list (collection) of the borrowers
-        /// </summary>
-        public static ObservableCollection<ListItemViewModel> Items { get; set; }
-
-        /// <summary>
         /// The flag to indicate if borrowers list is empty
         /// </summary>
-        public bool IsItemsEmpty => Items.Count == 0;
+        public bool IsItemsEmpty => ListViewModel.Instance.Items.Count == 0;
 
         #endregion
 
         #region Commands
 
         /// <summary>
-        /// The command to delete borrower from the list
+        /// The command to change the current page to the "confirm-delete" page which deletes selected borrower
         /// </summary>
-        public ICommand DeleteCommand { get; set; }
+        public ICommand ToConfirmDeletePageCommand { get; set; }
 
         /// <summary>
         /// The command to change the current page to the "add" page
@@ -53,8 +41,8 @@ namespace DluznikWPF.Core
         public MainViewModel()
         {
             // Create commands
-            DeleteCommand = new RelayCommand(DeleteAsync);
-            ToAddPageCommand = new RelayCommand(async () => await ChangeToAddPageAsync());
+            ToConfirmDeletePageCommand = new RelayCommand(ChangeToConfirmDeletePage);
+            ToAddPageCommand = new RelayCommand(ChangeToAddPage);
 
             // Load borrowers to the list
             LoadBorrowersFromFile();
@@ -65,41 +53,34 @@ namespace DluznikWPF.Core
         #region Command Methods
 
         /// <summary>
-        /// Deletes item from the list
+        /// Takes the user to the confirm-delete page
         /// </summary>
-        public void DeleteAsync()
+        public void ChangeToConfirmDeletePage()
         {
-            // For each item...
-            foreach(var item in Items)
-            {
-                // Delete item if selected
-                if (item.IsSelected) DeleteBorrower(item.ID);
-            }
-
-            // Reload borrowers
-            LoadBorrowersFromFile();
+            // Go to add page
+            IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.ConfirmDelete);
         }
 
         /// <summary>
         /// Takes the user to the add page
         /// </summary>
-        /// <returns></returns>
-        public async Task ChangeToAddPageAsync()
+        public void ChangeToAddPage()
         {
             // Go to add page
             IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Add);
-
-            await Task.Delay(1);
         }
 
         #endregion
 
         #region Private Helpers
 
+        /// <summary>
+        /// Loads every borrower stored in file and adds them to the list
+        /// </summary>
         private void LoadBorrowersFromFile()
         {
             // Reset borrowers list and counter
-            Items = new ObservableCollection<ListItemViewModel>();
+            ListViewModel.Instance.Items = new ObservableCollection<ListItemViewModel>();
             IoC.Application.BorrowersCounter = 0;
 
             // Read lines in file
@@ -139,7 +120,7 @@ namespace DluznikWPF.Core
                             IoC.Application.BorrowersCounter++;
 
                             // Then add new borrower to the list
-                            Items.Add(new ListItemViewModel
+                            ListViewModel.Instance.Items.Add(new ListItemViewModel
                             {
                                 Name = name,
                                 Value = float.Parse(value),
@@ -157,21 +138,6 @@ namespace DluznikWPF.Core
                 }
                 i++;
             }
-        }
-
-        private void DeleteBorrower(int index)
-        {
-            // Check if method was called properly
-            if (index <= 0) return;
-
-            // Read lines in file
-            var file = new List<string>(File.ReadAllLines("dluznicy.txt"));
-
-            // Delete specific borrower
-            for(int i = 0; i < 5; i++) file.RemoveAt((index-1)*5);
-
-            // Write remaining lines
-            File.WriteAllLines("dluznicy.txt", file.ToArray());
         }
 
         #endregion

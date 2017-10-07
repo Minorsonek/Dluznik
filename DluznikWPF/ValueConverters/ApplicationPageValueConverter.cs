@@ -21,6 +21,9 @@ namespace DluznikWPF
                 case ApplicationPage.Add:
                     return new AddPage();
 
+                case ApplicationPage.ConfirmDelete:
+                    return new ConfirmDeletePage();
+
                 default:
                     Debugger.Break();
                     return null;

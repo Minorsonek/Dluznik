@@ -1,0 +1,8 @@
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\bin\Release\DluznikWPF.Core.dll
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\bin\Release\DluznikWPF.Core.pdb
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\bin\Release\Ninject.dll
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\bin\Release\Ninject.xml
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\obj\Release\DluznikWPF.Core.csprojResolveAssemblyReference.cache
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\obj\Release\DluznikWPF.Core.csproj.CoreCompileInputs.cache
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\obj\Release\DluznikWPF.Core.dll
+C:\Users\MinorSonek\Documents\Visual Studio 2017\Projects\DluznikWPF\DluznikWPF.Core\obj\Release\DluznikWPF.Core.pdb

@@ -77,14 +77,14 @@ namespace DluznikWPF.Core
             if (IsSelected)
             {
                 // Unselect every other item
-                foreach (var item in MainViewModel.Items)
+                foreach (var item in ListViewModel.Instance.Items)
                     item.IsSelected = false;
 
                 return;
             }
 
             // Item isnt selected, unselect everything
-            foreach (var item in MainViewModel.Items)
+            foreach (var item in ListViewModel.Instance.Items)
                 item.IsSelected = false;
 
             // Select only this item

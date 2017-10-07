@@ -22,8 +22,9 @@
 
 
             <Border Background="{StaticResource ForegroundLightBrush}" 
-                        CornerRadius="10"
-                        Padding="15">
+                    CornerRadius="10"
+                    Padding="15"
+                    DataContext="{x:Static core:ListViewModel.Instance}">
 
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <ItemsControl ItemsSource="{Binding Items}">
@@ -45,28 +46,30 @@
                 </Grid.ColumnDefinitions>
 
                 <Button Padding="10"
-                            Margin="20"
-                            Content="Dodaj"
-                            Command="{Binding ToAddPageCommand}" />
+                        Margin="20"
+                        Content="Dodaj"
+                        Command="{Binding ToAddPageCommand}" 
+                        Cursor="Hand" />
 
                 <Button Grid.Column="2"
-                            Margin="20"
-                            Padding="10"
-                            Content="Usuń"
-                            Command="{Binding DeleteCommand}" />
+                        Margin="20"
+                        Padding="10"
+                        Content="Usuń"
+                        Command="{Binding ToConfirmDeletePageCommand}" 
+                        Cursor="Hand" />
 
             </Grid>
 
             <!-- No borrowers text -->
             <TextBlock Text="Aktualnie nie ma dłużników"
-                           Foreground="{StaticResource WordRedBrush}"
-                           Visibility="{Binding IsItemsEmpty, Converter={local:BooleanToVisiblityConverter}, ConverterParameter=True}"
-                           FontFamily="{StaticResource LatoBold}"
-                           TextWrapping="Wrap"
-                           HorizontalAlignment="Center"
-                           TextAlignment="Center"
-                           VerticalAlignment="Center"
-                           FontSize="{StaticResource FontSizeLarge}" />
+                       Foreground="{StaticResource WordRedBrush}"
+                       Visibility="{Binding IsItemsEmpty, Converter={local:BooleanToVisiblityConverter}, ConverterParameter=True}"
+                       FontFamily="{StaticResource LatoBold}"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="{StaticResource FontSizeLarge}" />
 
         </Grid>
     </Border>

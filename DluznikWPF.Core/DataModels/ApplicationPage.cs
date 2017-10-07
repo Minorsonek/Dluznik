@@ -13,6 +13,11 @@
         /// <summary>
         /// The add page
         /// </summary>
-        Add = 1
+        Add = 1,
+
+        /// <summary>
+        /// The confirm-delete page
+        /// </summary>
+        ConfirmDelete = 2
     }
 }

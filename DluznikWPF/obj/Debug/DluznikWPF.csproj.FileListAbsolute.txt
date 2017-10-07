@@ -32,3 +32,4 @@ C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF\
 C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF\obj\Debug\Controls\ListItemControl.baml
 C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF\obj\Debug\Pages\AddPage.g.cs
 C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF\obj\Debug\Pages\AddPage.baml
+C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF\obj\Debug\DluznikWPF.csproj.CoreCompileInputs.cache

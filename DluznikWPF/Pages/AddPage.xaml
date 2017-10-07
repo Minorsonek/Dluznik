@@ -57,14 +57,16 @@
                     <Button Padding="10"
                             Margin="20"
                             Content="Dodaj"
-                            Command="{Binding AddCommand}" />
+                            Command="{Binding AddCommand}" 
+                            IsDefault="True"
+                            Cursor="Hand" />
 
                     <Button Padding="10"
                             Margin="20"
                             Grid.Column="2"
                             Content="Powrót"
-                            Command="{Binding ToMainPageCommand}" />
-                    
+                            Command="{Binding ToMainPageCommand}" 
+                            Cursor="Hand" />
 
                 </Grid>
 

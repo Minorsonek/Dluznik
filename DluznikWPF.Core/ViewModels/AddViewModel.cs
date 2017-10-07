@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using System;
 using System.IO;
 
@@ -76,7 +75,7 @@ namespace DluznikWPF.Core
         {
             // Create commands
             AddCommand = new RelayCommand(AddBorrower);
-            ToMainPageCommand = new RelayCommand(async () => await ChangeToMainPageAsync());
+            ToMainPageCommand = new RelayCommand(ChangeToMainPage);
         }
 
         #endregion
@@ -129,13 +128,10 @@ namespace DluznikWPF.Core
         /// <summary>
         /// Takes the user to the main page
         /// </summary>
-        /// <returns></returns>
-        public async Task ChangeToMainPageAsync()
+        public void ChangeToMainPage()
         {
             // Go to main page
             IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Main);
-
-            await Task.Delay(1);
         }
 
         #endregion
