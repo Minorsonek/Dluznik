@@ -28,7 +28,7 @@ namespace DluznikWPF.Core
         /// <summary>
         /// The name of the new borrower
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
 
         /// <summary>
         /// The money that new borrower has borrowed

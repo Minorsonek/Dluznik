@@ -8,6 +8,14 @@ namespace DluznikWPF.Core
     /// </summary>
     public class ListItemViewModel : BaseViewModel
     {
+        #region Private Members
+
+        // Rough values of day and month
+        private int mDay;
+        private int mMonth;
+
+        #endregion
+
         #region Public Properties
 
         /// <summary>
@@ -23,12 +31,34 @@ namespace DluznikWPF.Core
         /// <summary>
         /// The day transaction was done
         /// </summary>
-        public int Day { get; set; }
+        public string Day
+        {
+            get
+            {
+                if (mDay < 10) return "0" + mDay.ToString();
+                else return mDay.ToString();
+            }
+            set
+            {
+                mDay = Int32.Parse(value);
+            }
+        }
 
         /// <summary>
         /// The month transaction was done
         /// </summary>
-        public int Month { get; set; }
+        public string Month
+        {
+            get
+            {
+                if (mMonth < 10) return "0" + mMonth.ToString();
+                else return mMonth.ToString();
+            }
+            set
+            {
+                mMonth = Int32.Parse(value);
+            }
+        }
 
         /// <summary>
         /// The message (topic) from borrower to recognise what was that money for

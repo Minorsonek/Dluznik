@@ -23,8 +23,8 @@
         {
             Name = "Mama";
             Value = 50;
-            Day = 6;
-            Month = 7;
+            Day = "6";
+            Month = "7";
             Message = "Na chleb";
         }
 

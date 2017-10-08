@@ -124,8 +124,8 @@ namespace DluznikWPF.Core
                             {
                                 Name = name,
                                 Value = float.Parse(value),
-                                Day = Int32.Parse(day),
-                                Month = Int32.Parse(month),
+                                Day = day,
+                                Month = month,
                                 Message = message,
                                 IsSelected = false,
                                 ID = IoC.Application.BorrowersCounter
