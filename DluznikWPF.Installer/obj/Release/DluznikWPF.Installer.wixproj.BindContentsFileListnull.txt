@@ -1,0 +1,11 @@
+..\DluznikWPF\bin\x64\Release\\Microsoft.Windows.Shell.pdb
+..\DluznikWPF\bin\x64\Release\\Dluznik.exe.config
+..\DluznikWPF\bin\x64\Release\\DluznikWPF.exe.locked
+..\DluznikWPF\bin\x64\Release\\Microsoft.Windows.Shell.dll
+..\DluznikWPF\bin\x64\Release\\DluznikWPF.Core.dll
+..\DluznikWPF\bin\x64\Release\\Dluznik.exe
+..\DluznikWPF\bin\x64\Release\\dluznicy.txt
+..\DluznikWPF\bin\x64\Release\\Dluznik.pdb
+..\DluznikWPF\bin\x64\Release\\Ninject.xml
+..\DluznikWPF\bin\x64\Release\\Ninject.dll
+..\DluznikWPF\bin\x64\Release\\DluznikWPF.Core.pdb

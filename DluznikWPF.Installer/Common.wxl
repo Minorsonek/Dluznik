@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+
+	<String Id="Company">Minorsonek</String>
+
+	<String Id="ProductNameFolder">Dluznik</String>
+	
+	<String Id="ProductName_x86">Dluznik (32bit)</String>
+	<String Id="ProductName_x64">Dluznik (64bit)</String>
+
+	<String Id="DowngradeErrorMessage">Nowsza wersja Dluznik'a jest juz zainstalowana.</String>
+
+	<String Id="Description">Dzieki niemu juz nigdy nie zapomnisz o pozyczonych pieniadzach :)</String>
+	<String Id="Comments">Prostota w dzialaniu i funkcjonalnosc gwarantowana</String>
+	<String Id="Keywords">dotnet,dluznik,borrowers,application,installer</String>
+
+	<String Id="Language">1033</String>
+
+</WixLocalization>

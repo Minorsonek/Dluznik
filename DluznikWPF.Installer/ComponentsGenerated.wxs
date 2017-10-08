@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmpF418CF79129C02028B79CDABEA009715" Guid="{657158B2-6BB1-4A6B-8D17-A54EA85A979E}">
+                <File Id="filCD7ABA8D47FE4F7A9B747ED594FB1FE0" KeyPath="yes" Source="$(var.BasePath)\dluznicy.txt" />
+            </Component>
+            <Component Id="cmpE009B1CA3FB66BC6E68133CB1774832F" Guid="{6F1AC910-2F1F-40C3-B0F6-A559B20951A9}">
+                <File Id="fil8479C4AF4CD170750FBE3799E98A6A42" KeyPath="yes" Source="$(var.BasePath)\Dluznik.exe" />
+            </Component>
+            <Component Id="cmpC625B34EF9BE3DAA36401D4869DA2598" Guid="{6D51EFEF-828C-498B-A366-F5D9102A58AE}">
+                <File Id="fil4225AE7B84D1BBACE77A8E8A2979AA29" KeyPath="yes" Source="$(var.BasePath)\Dluznik.exe.config" />
+            </Component>
+            <Component Id="cmp2AE77CCC8C691D450999F48DDCD059FB" Guid="{A5275341-1B6C-4E27-BF79-B108A7E065C7}">
+                <File Id="filD8889B6C8D0AF7DCB22EEECBA0F22015" KeyPath="yes" Source="$(var.BasePath)\Dluznik.pdb" />
+            </Component>
+            <Component Id="cmp1900E305CA38DB78D46D226F37B2BCF0" Guid="{346A0B34-31AA-453D-BB7C-0FA80F2E392B}">
+                <File Id="fil6DC399CA0D4A274CA6ADE3CC1C6E0477" KeyPath="yes" Source="$(var.BasePath)\DluznikWPF.Core.dll" />
+            </Component>
+            <Component Id="cmp48DC4A8D90FC5D94A8A4D58B1B85ABBC" Guid="{214C7DC9-FCDB-4EDE-83D8-2D6B59DEB594}">
+                <File Id="filFDEE981A65FAC2F49061BE7E6B71AC81" KeyPath="yes" Source="$(var.BasePath)\DluznikWPF.Core.pdb" />
+            </Component>
+            <Component Id="cmpB2781616158BCDE0C853284C70D2B3D1" Guid="{0E640679-2AFB-4108-93E9-4EB46EF084AD}">
+                <File Id="fil4F33CF13302FB6AAA3CD4D2CABFE03E2" KeyPath="yes" Source="$(var.BasePath)\DluznikWPF.exe.locked" />
+            </Component>
+            <Component Id="cmpBEE4841D9DBCA3FF84B49A916075B597" Guid="{E7A7929D-6B0B-441A-8CEE-797268DC70FD}">
+                <File Id="fil5E790CAF12E1FBEF11902C112AA02E80" KeyPath="yes" Source="$(var.BasePath)\Microsoft.Windows.Shell.dll" />
+            </Component>
+            <Component Id="cmp3FA8B3D8638AE1B9CA60A1240741A831" Guid="{28EBB3BA-700C-4711-9599-D22C3529FCC3}">
+                <File Id="fil2F680A1A2C9C8FDFDB9BC2C4633F1937" KeyPath="yes" Source="$(var.BasePath)\Microsoft.Windows.Shell.pdb" />
+            </Component>
+            <Component Id="cmpDA60982F820038280380BE207B6E738E" Guid="{A2A67D00-7D6C-4CD5-BD74-E681B650DC8B}">
+                <File Id="filFB25B5D44CA54D4D876DD0B5BC0DA0E0" KeyPath="yes" Source="$(var.BasePath)\Ninject.dll" />
+            </Component>
+            <Component Id="cmpB8D71C46885F3F849C4526BB4F6C303F" Guid="{7FDBCF35-9EC9-4862-AC8A-4036B6C28EFE}">
+                <File Id="filE3269A14F34C799370A12BE5D82002D0" KeyPath="yes" Source="$(var.BasePath)\Ninject.xml" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="PublishedComponents">
+            <ComponentRef Id="cmpF418CF79129C02028B79CDABEA009715" />
+            <ComponentRef Id="cmpE009B1CA3FB66BC6E68133CB1774832F" />
+            <ComponentRef Id="cmpC625B34EF9BE3DAA36401D4869DA2598" />
+            <ComponentRef Id="cmp2AE77CCC8C691D450999F48DDCD059FB" />
+            <ComponentRef Id="cmp1900E305CA38DB78D46D226F37B2BCF0" />
+            <ComponentRef Id="cmp48DC4A8D90FC5D94A8A4D58B1B85ABBC" />
+            <ComponentRef Id="cmpB2781616158BCDE0C853284C70D2B3D1" />
+            <ComponentRef Id="cmpBEE4841D9DBCA3FF84B49A916075B597" />
+            <ComponentRef Id="cmp3FA8B3D8638AE1B9CA60A1240741A831" />
+            <ComponentRef Id="cmpDA60982F820038280380BE207B6E738E" />
+            <ComponentRef Id="cmpB8D71C46885F3F849C4526BB4F6C303F" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

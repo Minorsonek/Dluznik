@@ -1,0 +1,9 @@
+obj\Release\Components.wixobj
+obj\Release\ComponentsGenerated.wixobj
+obj\Release\Directories.wixobj
+obj\Release\Product.wixobj
+C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF.Installer\bin\Release\Dluznik-x64.msi
+C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF.Installer\bin\Release\Dluznik-x64.wixpdb
+obj\Release\DluznikWPF.Installer.wixproj.BindContentsFileListnull.txt
+obj\Release\DluznikWPF.Installer.wixproj.BindOutputsFileListnull.txt
+obj\Release\DluznikWPF.Installer.wixproj.BindBuiltOutputsFileListnull.txt

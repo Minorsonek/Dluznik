@@ -1,4 +1,5 @@
 ﻿using DluznikWPF.Core;
+using System.IO;
 using System.Windows;
 
 namespace DluznikWPF
@@ -19,6 +20,9 @@ namespace DluznikWPF
 
             // Setup IoC
             IoC.Setup();
+
+            // Check if dluznicy.txt file exists, if not - create it
+            if (!File.Exists("dluznicy.txt")) File.Create("dluznicy.txt");
 
             // Show the main window
             Current.MainWindow = new MainWindow();

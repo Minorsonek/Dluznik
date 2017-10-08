@@ -1,0 +1,2 @@
+C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF.Installer\bin\Release\Dluznik-x64.msi
+C:\Users\MinorSonek\documents\visual studio 2017\Projects\DluznikWPF\DluznikWPF.Installer\bin\Release\Dluznik-x64.wixpdb

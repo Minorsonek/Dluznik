@@ -7,11 +7,11 @@ using System.Windows;
 // Ogólne informacje o zestawie są kontrolowane poprzez następujący 
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
-[assembly: AssemblyTitle("DluznikWPF")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Dluznik")]
+[assembly: AssemblyDescription("Aplikacja pozwalajaca na zapamietywanie komu i ile pozyczylismy pieniedzy")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DluznikWPF")]
+[assembly: AssemblyCompany("Minorsonek")]
+[assembly: AssemblyProduct("Dluznik")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
